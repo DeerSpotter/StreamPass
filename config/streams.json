@@ -1,0 +1,24 @@
+{
+  "streams": [
+    {
+      "name": "birdfeeder",
+      "publicPath": "/live/birdfeeder",
+      "type": "hls",
+      "timeoutMs": 1200,
+      "allowOriginFallback": false,
+      "routes": [
+        {
+          "name": "primary",
+          "baseUrl": "http://localhost:9001/live/birdfeeder"
+        },
+        {
+          "name": "secondary",
+          "baseUrl": "http://localhost:9002/live/birdfeeder"
+        }
+      ],
+      "origin": {
+        "baseUrl": "http://localhost:9000/live/birdfeeder"
+      }
+    }
+  ]
+}
