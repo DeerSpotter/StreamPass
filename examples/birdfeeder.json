@@ -1,0 +1,20 @@
+{
+  "name": "birdfeeder",
+  "publicPath": "/live/birdfeeder",
+  "type": "hls",
+  "timeoutMs": 1200,
+  "allowOriginFallback": false,
+  "routes": [
+    {
+      "name": "primary",
+      "baseUrl": "https://primary.example.com/live/birdfeeder"
+    },
+    {
+      "name": "secondary",
+      "baseUrl": "https://secondary.example.com/live/birdfeeder"
+    }
+  ],
+  "origin": {
+    "baseUrl": "https://origin.example.com/live/birdfeeder"
+  }
+}
